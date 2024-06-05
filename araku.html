@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ARAKU</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.top{
+    background-color: black;
+    height: 20vh;
+    background-size: cover;
+}
+.content{
+    background-color: white;
+}
+.top1{
+    height: 8vh;
+}
+.phone{
+    color: white;
+    padding: 20px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.mail{
+    color: white;
+    padding: 20px;
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.login{
+    color: white;
+    padding: 20px;
+    padding-left: 55vw;
+    font-weight: bold;
+    font-size: 17px;
+}
+.signin{
+    color: white;
+    padding: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.mowimage{
+    height: 12vh;
+    width: 16vw;
+    padding-left: 180px;
+}
+.toptext1{
+    color: white;
+    padding-left: 40vw;
+    font-size: 30px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+.toptext{
+    color: white;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 22px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    background-color: black;
+}
+.dropdown-menu{
+    background-color: #1f1f1f;
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-toggle{
+    color: white;
+}
+.carousel-caption{
+    font-weight: bold;
+    font-size: 50px;
+}
+.subheading{
+    font-weight: bold;
+    font-size: 18px;
+}
+.small-des{
+    height: 40vh;
+    width: 65vw;
+}
+.time{
+    width: 29vw;
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    padding: 35px;
+    padding-left: 200px;
+    color: orange;
+}
+.start{
+    width: 29vw;
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    padding: 12px;
+    padding-left: 200px;
+    color: orange;
+    padding-bottom: 20px;
+}
+.time1{
+    width: 35vw;
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    padding: 35px;
+    padding-left: 120px;
+    color: orange;
+}
+.start1{
+    width: 24vw;
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    padding: 12px;
+    padding-left: 125px;
+    color: orange;
+    padding-bottom: 20px;
+}
+.price{
+    height: 40vh;
+    width: 35vw;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+.pricehead{
+    height: 10vh;
+    width: 30vw;
+    background-color: orange;
+    color: white;
+    padding-top:  20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.pricedes{
+    background-color: #dabebe;
+    height: 20vh;
+    width: 30vw;
+}
+.pricefrom{
+    font-family: "Poppins",sans-serif;
+    padding: 30px;
+    font-size: 35px;
+    padding-top: 50px;
+}
+.pricedrop{
+    font-family: "Poppins",sans-serif;
+    text-decoration: line-through;
+    color: black;
+    font-size: 30px;
+    padding-top: 55px;
+}
+.fprice{
+    font-family: "Poppins",sans-serif;
+    color: black;
+    font-size: 57px;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.detailshead{
+    height: 7vh;
+    width: 100vw;
+    background-color: wheat;
+}
+.detail1{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Poppins",sans-serif;
+    color: orange;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+.odes{
+    background-color: white;
+    height: 100vh;
+    width: 60vw;
+    margin-top: 10px;
+}
+.overhead{
+    padding: 20px;
+    padding-left: 200px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Poppins",sans-serif;
+}
+.odescription{
+    font-family: "Poppins",sans-serif;
+    padding-left: 200px;
+    color: black;
+    font-size: 20px;
+}
+.line{
+    background-color: black;
+    height: 2px;
+    width: 45vw;
+    margin-left: 200px;
+}
+.drl{
+    padding-left: 200px;
+    color: black;
+    font-family: "Poppins",sans-serif;
+}
+.drl1{
+    padding-left: 120px;
+    color: rgb(104, 66, 66);
+    font-size: 20px;
+    font-family: "Poppins",sans-serif;
+}
+.plan{
+    background: url("planbacksecondpage.png");
+    height: 60vh;
+    width: 35vw;
+    margin-top: 200px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.btnp{
+    background-color: #e1e1e1;
+    color: black;
+    border-radius: 10px;
+    height: 7vh;
+    width: 20vw;
+    font-size: 25px;
+    background: transparent;
+}
+.dropdown{
+    padding-left: 120px;
+}
+.fa-calendar-days{
+    font-size: 34px;
+    padding-right: 30px;
+    background: transparent;
+}
+.dropdown-menu1{
+    background-color: #e1e1e1;
+    color: black;
+    width: 350px;
+}
+.fa-circle{
+  font-size: 12px;
+  padding: 9px;
+  opacity: 0.8;
+}
+.ddi1{
+    color: black;
+    font-size: 20px;
+    width: 10vw;
+}
+.fa-ellipsis-vertical{
+    font-size: 34px;
+    padding-top: 30px;
+    padding-left: 130px;
+}
+.fa-check{
+    font-size: 34px;
+    padding-right: 30px;
+    background: transparent;
+}
+.book{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    background: transparent;
+    border-radius: 15px;
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins",sans-serif;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-width: 0.1px;
+}
+.day1{
+    background-color: rgb(189, 212, 221);
+    height: 6vh;
+    width: 47vw;
+    margin-left: 200px;
+    font-size: 25px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    padding: 12px;
+}
+.why{
+    height: 60vh;
+    width: 35vw;
+    margin-top: 200px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: #f4fafa;
+    background-image: url("why1.jpg");
+}
+.whyimage{
+    height: 60vh;
+    width: 35vw;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.whyhead{
+    font-size: 35px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    padding: 30px;
+    padding-left: 40px;
+}
+.whydes{
+    padding-left: 70px;
+    font-size: 25px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+}
+.faqs{
+    height: 60vh;
+    width: 35vw;
+    margin-top: 200px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: #f4fafa;
+    background-image: url("faqs1.jpg");
+}
+.faqdes{
+    font-family: "Poppins",sans-serif;
+    padding-left: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+.gallery{
+    height: 50vh;
+    width: 98vw;
+    background-color: black;
+}
+.mowend{
+    height: 140px;
+    width: 140px;
+    margin: 50px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.mowimghead{
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 120px;
+}
+.galtext{
+    height: 5vh;
+    width: 30vw;
+    padding-left: 100px;
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.galbox1{
+    height: 50vh;
+    width: 32vw;
+}
+.galline{
+    height: 40vh;
+    width: 1px;
+    margin-left: 4px;
+    margin-top: 47px;
+    background-color: white;
+}
+.galtext2head{
+    padding: 30px;
+    padding-left: 70px;
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.galtext2{
+    padding-left: 70px;
+    font-family: "Poppins",sans-serif;
+    font-size: 23px;
+    color: white;
+}
+.d-block{
+    height: 90vh;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="top">
+    <div class="top1 d-flex flex-row">
+      <p class="phone"><i class="fa-solid fa-phone"></i>+91 9494752101</p>
+      <p class="mail"><i class="fa-regular fa-envelope"></i>  meetovertheweekend@gmail.com</p>
+      <a class="login" href="#"><i class="fa-solid fa-lock"></i>  Login</a>
+      <a class="signin" href="#"><i class="fa-solid fa-user-plus"></i>  Sign in</a>
+    </div>
+      <div class="d-flex flex-row">
+      <img src="mow1.jpg" class="mowimage"/>
+      <div class="toptext1">
+        <a class="btn dropdown-toggle" href="#" role="text" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          WEEKEND PLANS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">OOTY</a>
+          <a class="dropdown-item" href="#">GOKARNA</a>
+          <a class="dropdown-item" href="#">MUNNAR</a>
+        </div>
+      </div>
+      <div class="toptext">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          BACKPACKING TRIPS
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">MEGHALAYA</a>
+          <a class="dropdown-item" href="#">RAJASTHAN</a>
+          <a class="dropdown-item" href="#">DARJELING</a>
+        </div>
+      </div>
+      <div class="toptext">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ADVENTOROUS
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">LEH-LADAKH</a>
+          <a class="dropdown-item" href="#">VARKALA</a>
+          <a class="dropdown-item" href="#">MANALI</a>
+        </div>
+      </div>
+      <div class="toptext">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DEVOTIONAL
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">KEDARNATH</a>
+          <a class="dropdown-item" href="#">VARANASI</a>
+          <a class="dropdown-item" href="#">RISHIKESH</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="content">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="araku.avif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>ARAKU</p>
+              <p class="subheading">"Araku: A Tranquil Escape into Nature's Serene Embrace."</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="small-des d-flex flex-row">
+      <div class="d-flex flex-column">
+        <p class="time"><i class="fa-solid fa-clock"></i>  2 Nights - 3 Days</p>
+        <p class="start"><i class="fa-solid fa-train"></i>  HYDERABAD</p>
+        <p class="start"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill-up" viewBox="0 0 16 16">
+          <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 0 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.708l1.5-1.5a.5.5 0 0 1 .708 0M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+        </svg>  Min Age : 16</p>
+      </div>
+      <div class="d-flex flex-column">
+        <p class="time1"><i class="fa-solid fa-calendar-days"></i> Availability: Oct - June</p>
+        <p class="start1"><i class="fa-solid fa-bus"></i>  ARAKU</p>
+        <p class="start1"><i class="fa-solid fa-users-between-lines"></i>  Max People : 20</p>
+      </div>
+      <div class="price d-flex flex-column">
+        <div class="pricehead text-center">
+        <p>Weekend Special</p>
+      </div>
+        <div class="pricedes d-flex flex-row">
+        <p class="pricefrom"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+        </svg>  From </p>
+        <p class="pricedrop">6599</p>
+        <p class="fprice">5000*</p>
+        </div>
+      </div>
+    </div>
+    <div class="detailshead d-flex flex-row">
+      <a href="#overview" class="detail1">Overview</a>
+      <a href="#itinerary" class="detail1">Itinerary</a>
+      <a href="#faqs" class="detail1">Faq's</a>
+    </div>
+    <div class="d-flex flex-row">
+    <div id="overview" class="odes d-flex flex-column">
+      <p class="overhead"><i class="fa-solid fa-file"></i>  Overview</p>
+      <p class="odescription">Nestled in the Eastern Ghats of Andhra Pradesh, Araku Valley is a picturesque 
+        haven renowned for its lush greenery, coffee plantations, and cascading waterfalls. 
+        This serene hill station offers 
+        a refreshing escape from the bustle of city life, with its pleasant climate and captivating landscapes.</p>
+         <p class="line"></p>
+         <div class="d-flex flex-row">
+        <h5 class="drl">Departure & Return Location  :</h5>
+        <p class="drl1">Hyderabad,vijayawada</p>
+         </div>
+         <p class="line"></p>
+         <div class="d-flex flex-row">
+          <h5 class="drl">Departure Time</h5>
+          <p class="drl1">12:00 PM</p>
+        </div>
+        <p class="line"></p>
+        <div class="d-flex flex-row">
+          <h5 class="drl">Price Includes</h5>
+          <div class="d-flex flex-column">
+          <p class="drl1"><i class="fa-solid fa-check"></i> Transportation by Train</p>
+          <p class="drl1"><i class="fa-solid fa-check"></i> LocalTransportation by Private Vehicle</p>
+          <p class="drl1"><i class="fa-solid fa-check"></i> Accommodation(3 sharing,4 sharing, 5 sharing,6 sharing)</p>
+          <p class="drl1"><i class="fa-solid fa-check"></i> Trip Captain</p>
+          <p class="drl1"><i class="fa-solid fa-check"></i> First Aid</p>
+          <p class="drl1"><i class="fa-solid fa-check"></i> Entry Fees  & Guides</p>
+          </div>
+        </div>
+  </div>
+  <div class="plan d-flex flex-column">
+    <p class="overhead">plan your trip </p>
+    <div class="dropdown">
+      <i class="fa-solid fa-calendar-days"></i> <button class="btnp dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+        Select Date
+      </button>
+      <div class="dropdown-menu1 dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="ddi1 dropdown-item">17/04/2024</a>
+        <a class="ddi1 dropdown-item">24/04/2024</a>
+        <a class="ddi1 dropdown-item">30/04/2024</a>
+        <a class="ddi1 dropdown-item">20/05/2024</a>
+        <a class="ddi1 dropdown-item">26/05/2024</a>
+      </div>
+    </div>
+    <i class="fa-solid fa-ellipsis-vertical"></i><br>
+    <div class="dropdown">
+      <i class="fa-solid fa-check"></i> <button class="btnp dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+        Precautions
+      </button>
+      <div class="dropdown-menu1 dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="ddi1 dropdown-item"><i class="fa-solid fa-circle"></i>Aadhar Card(Mandatory)</a>
+        <a class="ddi1 dropdown-item"><i class="fa-solid fa-circle"></i>Face Climate Changes</a>
+        <a class="ddi1 dropdown-item"><i class="fa-solid fa-circle"></i>Driving License<br>(To explore more at your own risk)</a>
+        <a class="ddi1 dropdown-item"><i class="fa-solid fa-circle"></i>No Alcohol</a>
+      </div>
+    </div>
+    <button class="book"   onclick="book()">Book Slot</button>
+  </div>
+    </div>
+    <div id="itinerary" class="d-flex flex-row">
+      <div class="odes">
+      <p class="overhead"><i class="fa-solid fa-car"></i> Itinerary</p>
+      <div class="days d-flex flex-column">
+        <p class="day1">Day 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Departure Day</p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;Departure from the origin city in the Evening at 12:00  AM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(Don’t worry we will do the reservations for you. This is on US!)</p>
+      </div>
+      <div class="days d-flex flex-column">
+        <p class="day1">Day 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Vishakapatanam</p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;07:00&nbsp;AM&nbsp;-  Reach vishakapatanam  <br></p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;07:12&nbsp;AM&nbsp;-  Get into AC hired Bus <br></p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;07:30&nbsp;AM&nbsp;-  Stop at restaurent  finish breakfast  <br></p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;visit Rk beach <br></p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Reach araku and watch some iconic scenes<br></p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;  Dinner at the campsite. Spend the evening by the campfire or exploring the campsite.<br></p>
+      </div>
+      <div class="days d-flex flex-column">
+        <p class="day1">Day 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Araku Exploration</p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Wake up early morning to witness an amazing, lush greenery all around Araku<br></p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;watch the fogg mountains and spend time with the local villagers <br></p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Enjoy sunrise and visit the highest peak   <br></p>
+      </div>
+      </div>
+      <div class="why d-flex flex-column">
+        <div class="whyimage">
+        <p class="whyhead">why you should choose us ?</p>
+        <p class="whydes"><i class="fa-solid fa-suitcase-medical"></i>  &nbsp;&nbsp;Safety First ( No Alcohol & No smoking trips)<br></p>
+        <p class="whydes"><i class="fa-solid fa-people-group"></i> &nbsp;&nbsp; Experienced Team <br><br></p>
+        <p class="whydes"><i class="fa-solid fa-car"></i>  &nbsp;&nbsp;Sustainability and Responsible Travel<br><br></p>
+        <p class="whydes"><i class="fa-solid fa-camera"></i>  &nbsp;&nbsp;Creating Unforgettbale Memories<br><br></p>
+      </div>
+      </div>
+    </div>
+    <div id="faqs" class="d-flex flex-row">
+      <div class="odes">
+      <p class="overhead"><i class="fa-solid fa-circle-question"></i> &nbsp;FAQ's </p>
+      <div class="days d-flex flex-column">
+        <p class="day1">How do I book a trip?</p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;You can book a trip with us through 
+            our website by selecting your desired itinerary, dates, and number of travelers. Alternatively, you can contact our customer
+             service team at +919490991110 for assistance with booking.</p>
+             <p class="day1">Are your trips suitable for solo travelers?</p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;  Yes, many of our trips are suitable for solo travelers.
+             We also offer group tours where you can join other like-minded travelers.</p>
+             <p class="day1">Is it safe for women/girl travelers to join in the trip?</p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;  Yes, it’s absolutely safe for women/girl travelers to join our trips. Ensuring the safety and comfort of all our travelers, especially women, is our top priority. We have an experienced and professional 
+            team dedicated to providing a secure environment throughout the journey.
+              we strive to create memorable and worry-free travel experiences for everyone.</p>
+             <p class="day1">Will you allow alcohol during the trip? If no, why?</p>
+          <p class="odescription"><i class="fa-regular fa-circle-dot"></i>&nbsp;No, we do not allow alcohol during our trips.
+             Our decision is rooted in several reasons, primarily focused on ensuring the safety, well-being, and enjoyment of all participants.
+             By maintaining an alcohol-free policy, we aim to create a respectful and inclusive atmosphere
+              where everyone feels comfortable.</p>
+            </div>
+      </div>
+      <div class="faqs d-flex flex-column">
+        <div class="whyimage">
+        <p class="whyhead">Get a Question?</p>
+        <p class="faqdes"> Don’t hesitate to call us at +919490991110. Our dedicated team is here
+           to assist you with any inquiries you may have.
+           We’re just a phone call away and ready to provide yo
+           u with the information you need.
+           You can contact our customer service team to discuss your 
+           requirements and customize your trip accordingly.</p>
+      </div>
+      </div>
+    </div>
+    <div id="gallery" class="gallery d-flex flex-row">
+    <div class="galbox1 d-flex flex-column">
+      <img src="mow1.jpg" class="mowend"/>
+      <p class="mowimghead">MEET OVER THE WEEKEND</p>
+      <p class="galtext">Far far away, behind the word mountains, 
+        far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    </div>
+        <p class="galline text-column"></p>
+        <div class="galbox1 d-flex flex-column">
+          <p class="galtext2head">Quick Links</p>
+          <p class="galtext2">About Our Team</p>
+            <p class="galtext2">Our Services</p>
+            <p class="galtext2">Terms and Conditions</p>
+            <p class="galtext2">Privacy Policy</p>
+          <p class="galtext2">Refund & Returns Policy</p>
+        </div>
+        <p class="galline text-column"></p>
+        <div class="galbox1 d-flex flex-column">
+          <p class="galtext2head">Contact Info</p>
+          <p class="galtext2">Address : Plot No. 6-3-1490B, NGOs</p>
+            <p class="galtext2">Colony , Vanasthalipuram , Hyderabad</p>
+            <p class="galtext2">Phone : +91 9490991110</p>
+            <p class="galtext2">meetovertheweekend@gmail.com</p>
+            <p class="galtext2">Follow On &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i></p>
+        </div>
+    </div>
+    </div>
+</body>
+  <script src="scriptmini.js"></script>
+</html>

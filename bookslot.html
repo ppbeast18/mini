@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slot Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.back{
+    background-image: url("book1.avif");
+  height: 100vh;
+  background-size: cover;
+  padding-top: 50px;
+}
+.container{
+    height: 88vh;
+    width: 35vw;
+    padding-top: 5vh;
+    border-radius: 10px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.input-field{
+    border-radius: 15px;
+    border-width: 0px;
+    height: 35px;
+    font-size: 20px;
+    width: 30vw;
+    margin: 20px;
+    position: relative;
+}
+.signbtn{
+    border-width: 0px;
+    border-radius: 10px;
+    height: 50px;
+    width: 8vw;
+    margin-left: 11vw;
+    margin-top: 2vh;
+}
+.payment{
+    height: 50vh;
+    width: 25vw;
+    padding-top: 5vh;
+    border-radius: 10px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-right: 150px;
+}
+.date{
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 15vw;
+}
+.payimage{
+    padding-left: 80px;
+    height: 25vh;
+    width: 20vw;
+    opacity: 0.5;
+    padding-top: 15px;
+}
+.pnum{
+    font-family: "Roboto";
+    font-size:25px;
+    font-style: italic;
+    color: orange;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.m{
+    border-radius: 50%;
+    border-width: 0px;
+    font-size: 30px;
+    margin-left: 40px;
+    width: 3vw;
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+}
+.h4{
+    padding-top: 8px;
+}
+
+
+  </style>
+  <body>
+        <div class="back">
+          <div class="d-flex flex-row">
+            <div class="container">
+                <h1 class="signup text-center">Book Slot</h1>
+                <form action="connect.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Enter your Name*" class="input-field" size="30" required />
+                <label for="subject" class="date">Select your journey date</label>
+                <input type="date" id="subject" name="dob"  class="input-field" size="30" required/>
+                <input type="number" id="subject" name="aadhar" placeholder="Aadhaar No*" class="input-field" size="30" required/>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" class="input-field" size="30" required/>
+                <input type="number" id="subject" name="number" placeholder="Mobile No*" class="input-field" size="30" required/>
+                <input type="text" id="subject" name="paytype" placeholder="Place you want to visit - Eg  : Munnar" class="input-field" size="30" required/>
+                <input type="text" id="subject" name="payment" placeholder="UTR No  : After Payment" class="input-field" size="30" required/>
+        
+                <button class="signbtn btn-info">BOOK</button>
+              </form>
+    
+            </div>
+            <div class="payment">
+              <div class="d-flex flex-row">
+                <button class="m">M</button>&nbsp;&nbsp;
+                <h4 class="h4">Meetovertheweekend</h4>
+              </div>
+              <img src="payment.jpg" class="payimage"/>
+              <p class="pnum">UPI Number : 94913 51259</p>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

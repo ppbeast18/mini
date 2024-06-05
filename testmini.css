@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.top{
+    background-color: black;
+    height: 20vh;
+    background-size: cover;
+}
+.content{
+    background-color: white;
+}
+.top1{
+    height: 8vh;
+}
+.phone{
+    color: white;
+    padding: 20px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.mail{
+    color: white;
+    padding: 20px;
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.login{
+    color: white;
+    padding: 20px;
+    padding-left: 55vw;
+    font-weight: bold;
+    font-size: 17px;
+}
+.signin{
+    color: white;
+    padding: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.mowimage{
+    height: 12vh;
+    width: 16vw;
+    padding-left: 180px;
+}
+.toptext1{
+    color: white;
+    padding-left: 39vw;
+    font-size: 30px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+.toptext{
+    color: white;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 22px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.d-block{
+    height: 100vh;
+}
+.ctext{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.colimage{
+    height: 37vh;
+    width: 25vw;
+    padding: 25px;
+    padding-left: 35px;
+}
+.pchange{
+    text-decoration: line-through;
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    color: black;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.heading{
+    width: 17vw;
+    font-family: "Poppins",sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.ooty{
+    height: 45vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 15px;
+    margin: 2vw;
+}
+.image{
+    height: 28vh;
+    width: 20vw;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px;
+}
+.time{
+    width: 29vw;
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    padding-left: 9px;
+    color: orange;
+}
+.price{
+    width: 20vw;
+    font-family: "Poppins",sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-bottom: px;
+}
+.count1{
+    height: 7vh;
+    width: 98vw;
+}
+.countnum{
+    font-family: "Poppins",sans-serif;
+    font-size: 53px;
+    color: black;
+    padding-left: 200px;
+}
+.countnum1{
+    font-family: "Poppins",sans-serif;
+    font-size: 35px;
+    color: black;
+    padding-left: 250px;
+    padding-bottom: 30px;
+}
+.gallery{
+    height: 50vh;
+    width: 98vw;
+    background-color: black;
+}
+.mowend{
+    height: 140px;
+    width: 140px;
+    margin: 50px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.mowimghead{
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 120px;
+}
+.galtext{
+    height: 5vh;
+    width: 30vw;
+    padding-left: 100px;
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.galbox1{
+    height: 50vh;
+    width: 32vw;
+}
+.galline{
+    height: 40vh;
+    width: 1px;
+    margin-left: 4px;
+    margin-top: 47px;
+    background-color: white;
+}
+.galtext2head{
+    padding: 30px;
+    padding-left: 70px;
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.galtext2{
+    padding-left: 70px;
+    font-family: "Poppins",sans-serif;
+    font-size: 23px;
+    color: white;
+}
+.nav-link{
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    color: white;
+    padding-left:  30px;
+    padding-right: 30px;
+    text-decoration-color: white;
+}
+.navback{
+    background-color: black;
+}
+.navbar-nav{
+    color: white;
+}
