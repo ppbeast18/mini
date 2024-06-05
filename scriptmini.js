@@ -59,6 +59,6 @@ function darjeling() {
   window.location.href = "darjeling.html";
 }
 function book(){
-  window.open("http://localhost/testmini/book.html")
-  //window.location.href = "bookslot.html";
+  //window.open("http://localhost/testmini/book.html")
+  window.location.href = "bookslot.html";
 }
